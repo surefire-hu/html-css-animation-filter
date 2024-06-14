@@ -62,13 +62,52 @@
     width: 500px;
 }
 
+.ex-7-img {
+    transition: all 1s ease-in-out;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+.ex-7-img:hover {
+    filter: grayscale(1) invert(1);
+}
+
+.ex-8-img {
+    transition: all 1s ease-in-out;
+}
+.ex-8-img:hover {
+    filter: grayscale(1) blur(10px);
+    border-radius: 50px;
+}
+
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 2s;
 }
+
+.ex-9-img:hover {
+    filter: opacity(50%) hue-rotate(90deg);
+    border-radius: 50px;
+    transform: scale(2);
+}
+
 .ex-10-icon {
     font-size: 60px;
 }
+
+.ex-10-icon {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
